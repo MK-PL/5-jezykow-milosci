@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext);
+
+html, body {
+	background-color: #A60311;
+	color: #FFF;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.testBox, .scoreBox {
+	background-color: #f7f7f7;
+	color: #A60311;
+	display: none;
+	min-height: 280px;
+	width: 100%;
+	margin: 0px 100px;
+	padding: 50px;
+	position: relative;
+}
+
+.centerBox {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;	
+}
+
+h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 50px;
+}
+
+p {
+	font-style: italic;
+	font-weight: 200;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+li {
+	display: table;
+	min-height: 50px;
+	padding: 10px 0px;
+}
+
+li:hover {
+	background-color: #ffd8db;
+	cursor: pointer;
+}
+
+button {
+	background-color: #A60311;
+	border: 1px solid #FFF;
+	color: #FFF;
+	cursor: pointer;
+	font-weight: bold;
+	height: 4em;
+	text-transform: uppercase;
+	transition: 0.5s;
+	width: 10em;
+}
+
+button:hover {
+	background-color: #FFF;
+	color: #A60311;
+	transition: 0.5s;
+}
+
+.titleBox {
+	text-align: center;
+}
+
+.answerBox {
+	display: table-cell;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.answerBox:nth-child(2) {
+	width: 100%;
+}
+
+.progress-label {
+	color: #A60311;
+	left: 50%;
+	top: 8px;
+	font-weight: bold;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	position: absolute;
+	z-index: 30;
+}
+
+#progressbar {
+	bottom: 30px;
+	position: absolute;
+	width: calc(100% - 100px);
+}
+
+.return {
+	background-color: #f7f7f7;
+	border: 1px solid #A60311;
+	color: #A60311;
+}
+
+.return:hover {
+	background-color: #A60311;
+	color: #f7f7f7;
+	transition: 0.5s;
+}
