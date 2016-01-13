@@ -20,7 +20,7 @@ $(function () {
 	
 	$(".testUl li").on( "click", function(){
 		var clickedLi = this;
-		$(".testBox").hide(1, function() {
+		$(".fadeBox").fadeOut(200, function() {
 			answers[counter] = $(clickedLi).prop("id");
 			counter++;
 			$("#progressbar").progressbar({value: (counter/30)*100});
@@ -28,55 +28,65 @@ $(function () {
 			$(".testBox p").empty();
 			$(".testBox span").empty();
 			if (counter === 30) {
-				var anwersScore = {A: 0, B: 0, C: 0, D: 0, E: 0};
-				for (var i = 0; i < answers.length; i++) {
-					switch(answers[i]) {
-						case "A":
-							anwersScore["A"]++;
-							break;
-						case "B":
-							anwersScore["B"]++;
-							break;
-						case "C":
-							anwersScore["C"]++;
-							break;
-						case "D":
-							anwersScore["D"]++;
-							break;
-						case "E":
-							anwersScore["E"]++;
-							break;
-					} 
-				}
-				$(".a").text("Wyrażenia afrmatywne: " + anwersScore["A"]);
-				$(".b").text("Dobry czas: " + anwersScore["B"]);
-				$(".c").text("Przyjmowanie podarunków: " + anwersScore["C"]);
-				$(".d").text("Drobne przysługi: " + anwersScore["D"]);
-				$(".e").text("Dotyk: " + anwersScore["E"]);
-				$(".scoreBox").show();
+				$(".testBox").fadeOut(200, function() {
+					var anwersScore = {A: 0, B: 0, C: 0, D: 0, E: 0};
+					for (var i = 0; i < answers.length; i++) {
+						switch(answers[i]) {
+							case "A":
+								anwersScore["A"]++;
+								break;
+							case "B":
+								anwersScore["B"]++;
+								break;
+							case "C":
+								anwersScore["C"]++;
+								break;
+							case "D":
+								anwersScore["D"]++;
+								break;
+							case "E":
+								anwersScore["E"]++;
+								break;
+						} 
+					}
+					$(".a").html("<span class='bold'>Wyrażenia afirmatywne: </span>" + anwersScore["A"] + " punktów");
+					$(".b").html("<span class='bold'>Dobry czas: </span>" + anwersScore["B"] + " punktów");
+					$(".c").html("<span class='bold'>Przyjmowanie podarunków: </span>" + anwersScore["C"] + " punktów");
+					$(".d").html("<span class='bold'>Drobne przysługi: </span>" + anwersScore["D"] + " punktów");
+					$(".e").html("<span class='bold'>Dotyk: </span>" + anwersScore["E"] + " punktów");
+					$(".scoreBox").fadeIn(200);
+				});
 			}
 			else {
 				changeQuestion();
 				$("input[type=checkbox]").prop('checked', false);
-				$(".testBox").show();
+				$(".fadeBox").fadeIn(200);
 			}
 		});
 	});
 	
-	$(".start").click(function() {
-		$(".titleBox").hide(1, function() {
-			$(".testBox").show();
+	$(".info").click(function() {
+		$(".titleBox").fadeOut(400, function() {
+			$(".fadeBox").show(1);
+			$(".infoBox").fadeIn(400);
 		});
 	});
 	
+	$(".start").click(function() {
+		$(".infoBox").fadeOut(400, function() {
+			$(".fadeBox").show(1);
+			$(".testBox").fadeIn(400);
+		});
+	});	
+	
 	$(".return").click(function() {
-		$(".scoreBox").hide(1, function() {
+		$(".scoreBox").fadeOut(400, function() {
 			$(".progress-label").text("0%");
 			$("#progressbar").progressbar({value: 0});
 			counter = 0;
 			answers = [];
 			changeQuestion();
-			$(".titleBox").show();
+			$(".titleBox").fadeIn(400);
 		});
 	});	
 });

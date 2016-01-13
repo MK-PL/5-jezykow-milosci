@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext);
 
 html, body {
-	background-color: #A60311;
+	background: -moz-radial-gradient(center, ellipse cover, #A60311 0%, #000 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #A60311), color-stop(100%, #000));
+	background: -webkit-radial-gradient(center, ellipse cover, #A60311 0%, #000 100%);
+	background: -o-radial-gradient(center, ellipse cover, #A60311 0%, #000 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #A60311 0%, #000 100%);
+	background-color: radial-gradient(ellipse at center, #A60311 0%, #000 100%);
 	color: #FFF;
 	font-family: Verdana;
 	font-size: 16px;
@@ -11,14 +16,14 @@ html, body {
 	width: 100%;
 }
 
-.testBox, .scoreBox {
+.testBox, .scoreBox, .infoBox {
 	background-color: #f7f7f7;
 	color: #A60311;
 	display: none;
-	min-height: 280px;
+	min-height: 200px;
 	width: 100%;
 	margin: 0px 100px;
-	padding: 50px;
+	padding: 30px 50px 50px 50px;
 	position: relative;
 }
 
@@ -32,6 +37,7 @@ html, body {
 h1 {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 50px;
+	text-align: center;
 }
 
 p {
@@ -104,14 +110,30 @@ button:hover {
 	width: calc(100% - 100px);
 }
 
-.return {
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.center li {
+	display: block;
+	min-height: 0px;
+	font-weight: normal;
+}
+
+.reverse {
 	background-color: #f7f7f7;
 	border: 1px solid #A60311;
 	color: #A60311;
 }
 
-.return:hover {
+.reverse:hover {
 	background-color: #A60311;
 	color: #f7f7f7;
 	transition: 0.5s;
 }
+
+
