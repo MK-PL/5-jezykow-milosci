@@ -2,7 +2,8 @@
 <html lang="pl">
 	<head>
 		<meta charset="UTF-8">
-		<title>Test</title>
+		<title>Test - Sprawdź jaki jest Twój język miłości</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/blitzer/jquery-ui.css">
@@ -15,34 +16,44 @@
 		<div class="centerBox">
 			<div class="titleBox">
 				<h1>5 języków miłości</h1>
-				<button class="start">start</button>
+				<button class="info">start</button>
+			</div>
+			<div class="infoBox">
+				<h1>O co chodzi?</h1>
+				<p>Według koncepcji Gary'ego Chapmana istnieje pięć języków okazywania miłości drugiej osobie. Jak podaje autor tej teorii są to: dotyk, drobne przysługi, przyjmowanie podarunków, spędzanie ze sobą wspólnego czasu oraz wyrażenia afrimatywne. Przeważnie u każdego z nas dominuje jeden z powyższych języków. Znając języki miłości typowe dla Ciebie i Twoich bliskich, możesz zacząć wprowadzać zmiany.</p>
+				<p>Jaki jest Twój język miłości? Odpowiedź na to pytanie przyniesie rozwiązanie poniższego testu. Składa się on z 30 pytań. Każde pytanie składa się z dwóch odpowiedzi, z których należy wybrać jedno. Po rozwiązaniu testu dostaniesz wynik punktowy z podziałem na pięć sposobów okazywania miłości. Pytania i odpowiedzi są przetłumaczoną wersją zamieszczoną na stronie autora książki: <a href="http://www.5lovelanguages.com">www.5lovelanguages.com</a></p>
+				<div class="center">
+					<button class="reverse">start</button>
+				</div>
 			</div>
 			<div class="testBox">
 				<p></p>
-				<ul class="testUl">
-					<li class="type1" id="a">
-						<div class="answerBox"><i class="fa fa-circle-o"></i></div>
-						<div class="answerBox"><span class="answer1"></span></div>
-					</li>
-					<li class="type2" id="b">
-						<div class="answerBox"><i class="fa fa-circle-o"></i></div>
-						<div class="answerBox"><span class="answer2"></span></div>
-					</li>
-				</ul>
+				<div class="fadeBox">
+					<ul class="testUl">
+						<li class="type1" id="a">
+							<div class="answerBox"><i class="fa fa-circle-o"></i></div>
+							<div class="answerBox"><span class="answer1"></span></div>
+						</li>
+						<li class="type2" id="b">
+							<div class="answerBox"><i class="fa fa-circle-o"></i></div>
+							<div class="answerBox"><span class="answer2"></span></div>
+						</li>
+					</ul>
+				</div>	
 				<div id="progressbar"><div class="progress-label">0%</div></div>
 			</div>
 			<div class="scoreBox">
-				<p>Wynik</p>
-				<ul>
+				<h1>Wyniki testu</h1>
+				<ul class="center">
 					<li class="a">Wyrażenia afirmatywne: </li>
 					<li class="b">Dobry czas: </li>
 					<li class="c">Przyjmowanie podarunków: </li>
 					<li class="d">Drobne przysługi: </li>
 					<li class="e">Dotyk: </li>
 				</ul>
-				<div class="returnSection">
-					<button class="return">powrót</button>
-				</div>		
+				<div class="center">
+					<button class="reverse">powrót</button>
+				</div>
 			</div>
 		</div>
 	</body>
