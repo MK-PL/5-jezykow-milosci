@@ -72,7 +72,7 @@ $(function () {
 		});
 	});
 	
-	$(".start").click(function() {
+	$(".test").click(function() {
 		$(".infoBox").fadeOut(400, function() {
 			$(".fadeBox").show(1);
 			$(".testBox").fadeIn(400);
