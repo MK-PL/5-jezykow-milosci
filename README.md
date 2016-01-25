@@ -1,4 +1,4 @@
-# 5 jezykow milosci
+# 5 języków miłości
 
 http://mk-pl.github.io/5-jezykow-milosci/
 
