@@ -16,7 +16,7 @@ html, body {
 	width: 100%;
 }
 
-.testBox, .scoreBox, .infoBox {
+.infoBox, .testBox, .scoreBox {
 	background-color: #f7f7f7;
 	color: #A60311;
 	display: none;
@@ -44,6 +44,10 @@ p {
 	font-style: italic;
 	font-weight: 200;
 	text-align: center;
+}
+
+b {
+	font-weight: bold;
 }
 
 ul {
@@ -136,4 +140,40 @@ button:hover {
 	transition: 0.5s;
 }
 
-
+@media screen and (max-width: 1024px) and (max-height: 800px) {
+	p {
+		padding: 0px 5px;
+	}
+	
+	.centerBox {
+		display: inline;
+		height: auto;
+	}
+	
+	.infoBox, .scoreBox {
+		height: 100%;
+		margin: 0px;
+		padding: 5px 0px 38.5px 0px;
+	}
+	
+	.titleBox, .testBox {
+		/* Ustawia na środku okienko dialogowe */
+		left: 50%;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);	
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		width: 100%;
+		/* --- */
+	}
+	
+	#progressbar {
+		bottom: 5px;
+		position: relative;
+		width: calc(100% - 4px);
+	}
+	
+}
