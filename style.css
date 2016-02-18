@@ -151,6 +151,7 @@ button:hover {
 	}
 	
 	.infoBox, .scoreBox {
+		min-height: 100%;
 		margin: 0px;
 		padding: 5px 0px 38.5px 0px;
 	}
