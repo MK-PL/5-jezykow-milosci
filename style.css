@@ -75,7 +75,7 @@ button {
 	height: 4em;
 	text-transform: uppercase;
 	transition: 0.5s;
-	width: 10em;
+	width: 11em;
 }
 
 button:hover {
@@ -151,7 +151,6 @@ button:hover {
 	}
 	
 	.infoBox, .scoreBox {
-		height: 100%;
 		margin: 0px;
 		padding: 5px 0px 38.5px 0px;
 	}
