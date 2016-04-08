@@ -1,6 +1,6 @@
 $(function () {
 	var base, counter = 0, answers = [];
-	$("#progressbar").progressbar({value: 0});
+	$("#progressBar").progressbar({value: 0});
 	var changeQuestion = function() {
 		$(".testBox p").prepend("Większe znaczenie dla mnie ma, gdy... ");
 		$(".type1").attr("id",base[counter]["Type1"]);
@@ -23,8 +23,8 @@ $(function () {
 		$(".fadeBox").fadeOut(200, function() {
 			answers[counter] = $(clickedLi).prop("id");
 			counter++;
-			$("#progressbar").progressbar({value: (counter/30)*100});
-			$( ".progress-label" ).text( Math.round((counter/30)*100) + "%" );
+			$("#progressBar").progressbar({value: (counter/30)*100});
+			$( ".progressLabel" ).text( Math.round((counter/30)*100) + "%" );
 			$(".testBox p").empty();
 			$(".testBox span").empty();
 			if (counter === 30) {
@@ -65,24 +65,24 @@ $(function () {
 		});
 	});
 	
-	$(".info").click(function() {
+	$(".goToInfo").click(function() {
 		$(".titleBox").fadeOut(400, function() {
 			$(".fadeBox").show(1);
 			$(".infoBox").fadeIn(400);
 		});
 	});
 	
-	$(".test").click(function() {
+	$(".goToTest").click(function() {
 		$(".infoBox").fadeOut(400, function() {
 			$(".fadeBox").show(1);
 			$(".testBox").fadeIn(400);
 		});
 	});	
 	
-	$(".return").click(function() {
+	$(".goToStart").click(function() {
 		$(".scoreBox").fadeOut(400, function() {
-			$(".progress-label").text("0%");
-			$("#progressbar").progressbar({value: 0});
+			$(".progressLabel").text("0%");
+			$("#progressBar").progressbar({value: 0});
 			counter = 0;
 			answers = [];
 			changeQuestion();

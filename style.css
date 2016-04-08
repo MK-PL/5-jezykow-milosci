@@ -16,54 +16,8 @@ html, body {
 	width: 100%;
 }
 
-.infoBox, .testBox, .scoreBox {
-	background-color: #f7f7f7;
-	color: #A60311;
-	display: none;
-	min-height: 200px;
-	width: 100%;
-	margin: 0px 100px;
-	padding: 30px 50px 50px 50px;
-	position: relative;
-}
-
-.centerBox {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	height: 100%;	
-}
-
-h1 {
-	font-family: 'Kaushan Script', cursive;
-	font-size: 50px;
-	text-align: center;
-}
-
-p {
-	font-style: italic;
-	font-weight: 200;
-	text-align: center;
-}
-
 b {
 	font-weight: bold;
-}
-
-ul {
-	list-style: none;
-	padding: 0px;
-}
-
-li {
-	display: table;
-	min-height: 50px;
-	padding: 10px 0px;
-}
-
-li:hover {
-	background-color: #ffd8db;
-	cursor: pointer;
 }
 
 button {
@@ -84,8 +38,32 @@ button:hover {
 	transition: 0.5s;
 }
 
-.titleBox {
+h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 50px;
 	text-align: center;
+}
+
+li {
+	display: table;
+	min-height: 50px;
+	padding: 10px 0px;
+}
+
+li:hover {
+	background-color: #ffd8db;
+	cursor: pointer;
+}
+
+p {
+	font-style: italic;
+	font-weight: 200;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
 }
 
 .answerBox {
@@ -98,7 +76,39 @@ button:hover {
 	width: 100%;
 }
 
-.progress-label {
+.bold {
+	font-weight: bold;
+}
+
+.centerBox {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;	
+}
+
+.centerText {
+	text-align: center;
+}
+
+.centerText li {
+	display: block;
+	min-height: 0px;
+	font-weight: normal;
+}
+
+.infoBox, .testBox, .scoreBox {
+	background-color: #f7f7f7;
+	color: #A60311;
+	display: none;
+	min-height: 200px;
+	width: 100%;
+	margin: 0px 100px;
+	padding: 30px 50px 50px 50px;
+	position: relative;
+}
+
+.progressLabel {
 	color: #A60311;
 	left: 50%;
 	top: 8px;
@@ -108,36 +118,26 @@ button:hover {
 	z-index: 30;
 }
 
-#progressbar {
-	bottom: 30px;
-	position: absolute;
-	width: calc(100% - 100px);
-}
-
-.bold {
-	font-weight: bold;
-}
-
-.center {
-	text-align: center;
-}
-
-.center li {
-	display: block;
-	min-height: 0px;
-	font-weight: normal;
-}
-
-.reverse {
+.secondColorButton {
 	background-color: #f7f7f7;
 	border: 1px solid #A60311;
 	color: #A60311;
 }
 
-.reverse:hover {
+.secondColorButton:hover {
 	background-color: #A60311;
 	color: #f7f7f7;
 	transition: 0.5s;
+}
+
+.titleBox {
+	text-align: center;
+}
+
+#progressBar {
+	bottom: 30px;
+	position: absolute;
+	width: calc(100% - 100px);
 }
 
 @media screen and (max-width: 1024px) and (max-height: 800px) {
@@ -175,5 +175,4 @@ button:hover {
 		position: relative;
 		width: calc(100% - 4px);
 	}
-	
 }
