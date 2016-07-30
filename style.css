@@ -170,7 +170,7 @@ ul {
 		/* --- */
 	}
 	
-	#progressbar {
+	#progressBar {
 		bottom: 5px;
 		position: relative;
 		width: calc(100% - 4px);
