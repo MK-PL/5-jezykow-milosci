@@ -77,7 +77,7 @@ $(function () {
 			$(".fadeBox").show(1);
 			$(".testBox").fadeIn(400);
 		});
-	});	
+	});
 	
 	$(".goToStart").click(function() {
 		$(".scoreBox").fadeOut(400, function() {
@@ -88,5 +88,5 @@ $(function () {
 			changeQuestion();
 			$(".titleBox").fadeIn(400);
 		});
-	});	
+	});
 });
