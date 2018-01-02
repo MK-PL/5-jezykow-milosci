@@ -2,7 +2,7 @@ $(function () {
 	var base, counter = 0, answers = [];
 	$("#progressBar").progressbar({value: 0});
 	var changeQuestion = function() {
-		$(".testBox p").prepend("Większe znaczenie dla mnie ma, gdy... ");
+		$(".testBox p").prepend((counter + 1) + ". Większe znaczenie dla mnie ma, gdy... ");
 		$(".type1").attr("id",base[counter]["Type1"]);
 		$(".type2").attr("id",base[counter]["Type2"]);
 		$(".answer1").prepend(base[counter]["Answer1"]);
