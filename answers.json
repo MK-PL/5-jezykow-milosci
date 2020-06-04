@@ -1,0 +1,212 @@
+[
+    {
+        "question": "1",
+        "type1": "A",
+        "answer1": "ukochana osoba wysyła do mnie pełny uczuć list/e-mail bez wyraźnego powodu.",
+        "type2": "E",
+        "answer2": "przytulam ukochaną osobę."
+    },
+    {
+        "question": "2",
+        "type1": "B",
+        "answer1": "mogę spędzić czas sam na sam z ukochaną osobą.",
+        "type2": "D",
+        "answer2": "wykonuję prace domowe z ukochaną osoba."
+    },
+    {
+        "question": "3",
+        "type1": "C",
+        "answer1": "ukochana osoba daje mi mały prezent jako wyraz miłości lub troski.",
+        "type2": "B",
+        "answer2": "jestem na długiej wycieczce z ukochaną osobą."
+    },
+    {
+        "question": "4",
+        "type1": "D",
+        "answer1": "ukochana osoba robi coś niespodziewanego dla mnie, żeby mi pomóc przy projekcie.",
+        "type2": "E",
+        "answer2": "mogę niewinnie dotknąć ukochaną osobę."
+    },
+    {
+        "question": "5",
+        "type1": "E",
+        "answer1": "ukochana osoba obejmuje mnie w obecności innych ludzi.",
+        "type2": "C",
+        "answer2": "ukochana osoba daje mi prezent - niespodziankę."
+    },
+    {
+        "question": "6",
+        "type1": "B",
+        "answer1": "jestem z ukochaną osobą nawet, gdy naprawdę nie robimy niczego.",
+        "type2": "E",
+        "answer2": "kiedy trzymam za dłonie, przybijam piątki lub obejmuję ukochaną osobę."
+    },
+    {
+        "question": "7",
+        "type1": "C",
+        "answer1": "otrzymuję prezent od ukochanej osoby.",
+        "type2": "A",
+        "answer2": "usłyszę od ukochanej osoby, że mnie kocha."
+    },
+    {
+        "question": "8",
+        "type1": "E",
+        "answer1": "siedzę blisko ukochanej osoby.",
+        "type2": "A",
+        "answer2": "ukochana osoba chwali mnie bez wyraźnego powodu."
+    },
+    {
+        "question": "9",
+        "type1": "B",
+        "answer1": "mam szansę spotkać się z ukochaną osobą.",
+        "type2": "C",
+        "answer2": "niespodziewanie dostaję drobne upominki od ukochanej osoby."
+    },
+    {
+        "question": "10",
+        "type1": "A",
+        "answer1": "słyszę od ukochanej osoby, że jest ze mnie dumna.",
+        "type2": "D",
+        "answer2": "ukochana osoba pomaga mi w czynnościach (np. gotowanie, sprzątanie)."
+    },
+    {
+        "question": "11",
+        "type1": "B",
+        "answer1": "robię wspólnie rzeczy z ukochaną osobą.",
+        "type2": "A",
+        "answer2": "słyszę słowa wsparcia od ukochanej osoby."
+    },
+    {
+        "question": "12",
+        "type1": "D",
+        "answer1": "ukochana osoba robi dla mnie rzeczy, a nie tylko o nich rozmawia.",
+        "type2": "E",
+        "answer2": "czuję więź z ukochaną osobą dzięki przytulaniu."
+    },
+    {
+        "question": "13",
+        "type1": "A",
+        "answer1": "słyszę pochwały od ukochanej osoby.",
+        "type2": "C",
+        "answer2": "ukochana osoba daje mi przemyślane prezenty."
+    },
+    {
+        "question": "14",
+        "type1": "B",
+        "answer1": "jestem w stanie być w pobliżu ukochanej osoby.",
+        "type2": "E",
+        "answer2": "ukochana osoba masuje moje plecy."
+    },
+    {
+        "question": "15",
+        "type1": "A",
+        "answer1": "ukochana osoba cieszy się z moich osiągnięć.",
+        "type2": "D",
+        "answer2": "ukochana osoba pomaga mi w tym, czego nie lubię robić."
+    },
+    {
+        "question": "16",
+        "type1": "E",
+        "answer1": "jestem w stanie być fizycznie blisko ukochanej osoby.",
+        "type2": "B",
+        "answer2": "ukochana osoba interesuje się tym, co jest dla mnie ważne."
+    },
+    {
+        "question": "17",
+        "type1": "D",
+        "answer1": "ukochana osoba pomaga mi w realizacji moich projektów.",
+        "type2": "C",
+        "answer2": "cieszy mnie otwieranie prezentu od ukochanej osoby."
+    },
+    {
+        "question": "18",
+        "type1": "A",
+        "answer1": "słyszę komplementy od ukochanej osoby na temat mojego wyglądu.",
+        "type2": "B",
+        "answer2": "ukochana osoba ma czas, żeby mnie wysłuchać i naprawdę zrozumieć moje uczucia."
+    },
+    {
+        "question": "19",
+        "type1": "E",
+        "answer1": "mogę mocno przytulić ukochaną osobę, wśród innych ludzi.",
+        "type2": "D",
+        "answer2": "ukochana osoba proponuje mnie w czymś wyręczyć."
+    },
+    {
+        "question": "20",
+        "type1": "D",
+        "answer1": "ukochana osoba robi coś specjalnie dla mnie, żeby mi pomóc.",
+        "type2": "C",
+        "answer2": "ukochana osoba wybiera dla mnie prezent z większym rozmysłem."
+    },
+    {
+        "question": "21",
+        "type1": "B",
+        "answer1": "ukochana osoba nie sprawdza swojego telefonu, gdy rozmawiamy ze sobą.",
+        "type2": "D",
+        "answer2": "ukochana osoba daje z siebie wszystko, żeby przynieść mi ulgę."
+    },
+    {
+        "question": "22",
+        "type1": "C",
+        "answer1": "nie mogę się doczekać na pewną datę, ponieważ prawdopodobnie dostanę prezent od ukochanej osoby.",
+        "type2": "A",
+        "answer2": "ukochana osoba mówi mi, jak wiele dla niej znaczę."
+    },
+    {
+        "question": "23",
+        "type1": "C",
+        "answer1": "ukochana osoba, która nie widziała mnie od jakiegoś czasu, myśli, żeby mi podarować drobny upominek.",
+        "type2": "D",
+        "answer2": "ukochana osoba pomaga mi, gdy nie czuję się na siłach, żeby zrobić rzeczy na czas."
+    },
+    {
+        "question": "24",
+        "type1": "B",
+        "answer1": "ukochana osoba nie przerywa mi, gdy rozmawiam.",
+        "type2": "C",
+        "answer2": "dawanie prezentów jest ważną częścią relacji z ukochaną osobą."
+    },
+    {
+        "question": "25",
+        "type1": "D",
+        "answer1": "ukochana osoba pomaga mi, kiedy wie, że jestem zmęczona(y).",
+        "type2": "B",
+        "answer2": "wychodzę gdzieś spędzić czas z ukochaną osobą."
+    },
+    {
+        "question": "26",
+        "type1": "E",
+        "answer1": "ukochana osoba dotyka mojej dłoni lub ramienia, by pokazać swoją troskę lub opiekę.",
+        "type2": "C",
+        "answer2": "ukochana osoba daje mi mały prezent, który odbiera w ciągu jej normalnego dnia."
+    },
+    {
+        "question": "27",
+        "type1": "A",
+        "answer1": "ukochana osoba wspiera mnie słownie.",
+        "type2": "B",
+        "answer2": "spędzam czas, wykonując coś wspólnie (np. hobby) z ukochaną osobą."
+    },
+    {
+        "question": "28",
+        "type1": "C",
+        "answer1": "ukochana osoba daje mi namacalny dowód swojego uznania.",
+        "type2": "E",
+        "answer2": "często dotykam ukochanej osoby, by wyrazić swoją przyjaźń."
+    },
+    {
+        "question": "29",
+        "type1": "D",
+        "answer1": "ukochana osoba pomaga mi zwłaszcza, gdy wiem, że jest już zajęta.",
+        "type2": "A",
+        "answer2": "słyszę słowa ukochanej osoby, że mnie docenia."
+    },
+    {
+        "question": "30",
+        "type1": "E",
+        "answer1": "przytula mnie osoba, która nie widziała mnie przez jakiś czas.",
+        "type2": "A",
+        "answer2": "słyszę słowa ukochanej osoby, jak wiele dla niej znaczę."
+    }
+]
