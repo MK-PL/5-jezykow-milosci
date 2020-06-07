@@ -54,7 +54,6 @@ let FUNCTIONS = {
         }
 
         FUNCTIONS.prepareChoosedAnswersList();
-        FUNCTIONS.sendEventData('score');
 
         FUNCTIONS.hideSection('.box__section');
         setTimeout(() => {
@@ -176,10 +175,10 @@ let FUNCTIONS = {
             $('.question').insertAdjacentHTML('beforeend', itemTemplate);
         }
     },
-    sendEventData: function (gaEvent = 'view') {
+    sendEventData: function () {
         let viewEvent = setInterval(function () {
             if(window.ga && ga.loaded) {
-                gtag('event', gaEvent);
+                gtag('event', 'view');
                 clearInterval(viewEvent);
             }
         }, 500);
@@ -187,7 +186,7 @@ let FUNCTIONS = {
     init: function () {
         FUNCTIONS.loadAnswers();
         FUNCTIONS.buttonsFunctions();
-        FUNCTIONS.sendEventData('view');
+        FUNCTIONS.sendEventData();
     }
 };
 
