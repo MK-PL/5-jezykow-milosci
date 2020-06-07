@@ -54,6 +54,7 @@ let FUNCTIONS = {
         }
 
         FUNCTIONS.prepareChoosedAnswersList();
+        FUNCTIONS.sendEventData('score');
 
         FUNCTIONS.hideSection('.box__section');
         setTimeout(() => {
@@ -175,10 +176,10 @@ let FUNCTIONS = {
             $('.question').insertAdjacentHTML('beforeend', itemTemplate);
         }
     },
-    sendEventData: function () {
+    sendEventData: function (gaEvent = 'view') {
         let viewEvent = setInterval(function () {
             if(window.ga && ga.loaded) {
-                gtag('event', 'view');
+                gtag('event', gaEvent);
                 clearInterval(viewEvent);
             }
         }, 500);
