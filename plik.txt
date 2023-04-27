@@ -1,4 +1,0 @@
-test, super
-ole, iha
-pop
-rock

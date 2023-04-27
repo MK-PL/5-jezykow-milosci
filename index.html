@@ -1,67 +1,132 @@
 <!doctype html>
 <html lang="pl">
-	<head>
-		<title>Test - Sprawdź jaki jest Twój język miłości</title>
-		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, target-densityDpi=device-dpi">
-        <meta name="format-detection" content="telephone=no">
-        <meta HTTP-EQUIV="Pragma" content="no-cache">
-        <meta HTTP-EQUIV="Expires" content="-1">
-		<link rel="icon" type="image/png" href="favicon.png"/>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/blitzer/jquery-ui.css">
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script src="jquery.csv-0.71.js"></script>
-		<script src="script.js"></script>
-	</head>
-	<body>
-		<main class="centerBox">
-			<section class="titleBox">
-				<h1>5 języków miłości</h1>
-				<button class="goToInfo">O co chodzi?</button>
-			</section>
-			<section class="infoBox">
-				<h1>O co chodzi?</h1>
-				<p>Istnieje pięć języków okazywania miłości drugiej osobie: <b>dotyk, drobne przysługi, przyjmowanie podarunków, spędzanie ze sobą wspólnego czasu oraz wyrażenia afirmatywne</b>. Przeważnie u każdego z nas dominuje jeden z powyższych języków. Znając języki miłości typowe dla Ciebie i Twoich bliskich, możesz zacząć wprowadzać zmiany.</p>
-				<p>Jaki jest Twój język miłości? Odpowiedź na to pytanie przyniesie rozwiązanie poniższego testu. Składa się on z 30 pytań. Każde pytanie składa się z dwóch odpowiedzi, z których należy wybrać jedną - tą, która bardziej odpowiada Twojej preferencji. Czasem wybranie jednego zdania może być trudne, ale w każdej parze należy wybrać tylko jedno, aby wyniki testu były dokładne. Po rozwiązaniu testu dostaniesz wynik punktowy z podziałem na pięć sposobów okazywania miłości. Pytania i odpowiedzi są przetłumaczoną wersją testu zamieszczonego na: <a href="http://www.5lovelanguages.com">www.5lovelanguages.com</a></p>
-				<p>Jeśli masz uwagi, pomysły i chcesz się nimi ze mną podzielić, możesz wysłać wiadomość na podany adres e-mail: kontakt [at] maciejkawa.lubin.pl</p>
-				<div class="centerText">
-					<button class="secondColorButton goToTest">Rozpocznij test</button>
-				</div>
-			</section>
-			<section class="testBox">
-				<p></p>
-				<div class="fadeBox">
-					<ul class="testUl">
-						<li class="type1" id="a">
-							<div class="answerBox"><i class="fa fa-circle-o"></i></div>
-							<div class="answerBox"><span class="answer1"></span></div>
-						</li>
-						<li class="type2" id="b">
-							<div class="answerBox"><i class="fa fa-circle-o"></i></div>
-							<div class="answerBox"><span class="answer2"></span></div>
-						</li>
-					</ul>
-				</div>
-				<div id="progressBar"><div class="progressLabel">0%</div></div>
-			</section>
-			<section class="scoreBox">
-				<h1>Wyniki testu</h1>
-				<ul class="centerText">
-					<li class="a">Wyrażenia afirmatywne: </li>
-					<li class="b">Dobry czas: </li>
-					<li class="c">Przyjmowanie podarunków: </li>
-					<li class="d">Drobne przysługi: </li>
-					<li class="e">Dotyk: </li>
-				</ul>
-				<p>Twoim ojczystym językiem miłości jest ten, który wybrano najczęściej. Jeśli dwie różne opcje uzyskały najwięcej punktów, oznacza to, że jesteś osobą dwujęzyczną - posługujesz się dwoma podstawowymi językami wyrażania miłości. Jeśli drugi wynik w kolejności jest bardzo blisko wyniku najwyższego, ale nie mają tej samej wartości, oznacza to, że obydwa te sposoby wyrażania miłości są dla ciebie ważne. Najwyższa liczba punktów dla każdego z języków to 12.</p>
-				<p>Chociaż niektóre z języków miłości oceniono niżej niż inne, nie odrzucaj ich jako pozbawionych znaczenia. Twoi przyjaciele i osoby ci bliskie mogą w taki sposób właśnie okazywać miłość. Ważne więc jest, aby znać je wszystkie.</p>
-				<div class="centerText">
-					<button class="secondColorButton goToStart">powrót</button>
-				</div>
-			</section>
-		</main>
-	</body>
+<head>
+    <title>Test z 5 języków miłości - sprawdź, jaki jest Twój język miłości</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona internetowa z testem do wypełnienia na temat 5 języków miłości. Odpowiedz na pytania i sprawdź, jaki jest Twój język miłości: Dotyk, drobne przysługi, przyjmowanie podarunków, spędzanie ze sobą wspólnego czasu czy wyrażenia afirmatywne.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta HTTP-EQUIV="Pragma" content="no-cache">
+    <meta HTTP-EQUIV="Expires" content="-1">
+    <meta property="og:image" content="img/image.png">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="box__main">
+    <section class="box__section -info" style="display: block;">
+        <div class="box__content">
+            <h1 class="box__title">5 języków miłości</h1>
+            <p>Istnieje pięć języków okazywania miłości drugiej osobie: <b>dotyk, drobne przysługi, przyjmowanie
+                podarunków, spędzanie ze sobą wspólnego czasu oraz wyrażenia afirmatywne</b>. Przeważnie u każdego z nas
+                dominuje jeden z powyższych języków. Znając języki miłości typowe dla Ciebie i Twoich bliskich, możesz
+                zacząć wprowadzać zmiany.</p>
+            <p>Jaki jest Twój język miłości? Odpowiedź na to pytanie przyniesie rozwiązanie poniższego testu. Składa się
+                on z 30 pytań. Każde pytanie składa się z dwóch odpowiedzi, z których należy wybrać jedną - tą, która
+                bardziej odpowiada Twojej preferencji. Czasem wybranie jednego zdania może być trudne, ale w każdej
+                parze należy wybrać tylko jedno, aby wyniki testu były dokładne. Po rozwiązaniu testu dostaniesz wynik
+                punktowy z podziałem na pięć sposobów okazywania miłości. Pytania i odpowiedzi są przetłumaczoną wersją
+                testu zamieszczonego na: <a href="http://www.5lovelanguages.com"
+                                            rel="nofollow">www.5lovelanguages.com</a></p>
+            <p>Jeśli masz uwagi, pomysły i chcesz się nimi ze mną podzielić, możesz wysłać wiadomość na podany adres
+                e-mail: <span style="display: inline-block;">kontakt <span style="font-style: normal">( 🐒 )</span> maciejkawa.lubin.pl</span></p>
+            <button class="button -margin -goto" data-goto=".-test">Rozpocznij test</button>
+        </div>
+    </section>
+    <section class="box__section -test">
+        <p class="box__subtitle -question"></p>
+        <ul class="answers">
+            <li class="answers__item">
+                <button class="answers__button -answer1" data-answer="a">
+                    <i class="answers__icon icon-circle" src="img/circle.svg" alt="circle"></i>
+                    <span class="answers__text"></span>
+                </button>
+            </li>
+            <li class="answers__item">
+                <button class="answers__button -answer2" data-answer="b">
+                    <i class="answers__icon icon-circle" src="img/circle.svg" alt="circle"></i>
+                    <span class="answers__text"></span>
+                </button>
+            </li>
+        </ul>
+        <div class="progress">
+            <div class="progress__value">0%</div>
+            <div class="progress__bar" style="display: none; width: 0%;"></div>
+        </div>
+    </section>
+    <section class="box__section -score">
+        <div class="box__content">
+            <div class="box__title">Wyniki testu</div>
+            <dl class="chart">
+                <dd class="chart__definition" data-answer="A">
+                    <div class="chart__text">Wyrażenia afirmatywne</div>
+                    <div class="chart__bar">
+                        <div class="chart__value" style="width: 0;"></div>
+                    </div>
+                </dd>
+                <dd class="chart__definition" data-answer="B">
+                    <div class="chart__text">Dobry czas</div>
+                    <div class="chart__bar">
+                        <div class="chart__value" style="width: 0;"></div>
+                    </div>
+                </dd>
+                <dd class="chart__definition" data-answer="C">
+                    <div class="chart__text">Przyjmowanie podarunków</div>
+                    <div class="chart__bar">
+                        <div class="chart__value" style="width: 0;"></div>
+                    </div>
+                </dd>
+                <dd class="chart__definition" data-answer="D">
+                    <div class="chart__text">Drobne przysługi</div>
+                    <div class="chart__bar">
+                        <div class="chart__value" style="width: 0;"></div>
+                    </div>
+                </dd>
+                <dd class="chart__definition" data-answer="E">
+                    <div class="chart__text">Dotyk</div>
+                    <div class="chart__bar">
+                        <div class="chart__value" style="width: 0;"></div>
+                    </div>
+                </dd>
+                <div class="chart__ticks">
+                    <div class="chart__tick">0</div>
+                    <div class="chart__tick">1</div>
+                    <div class="chart__tick">2</div>
+                    <div class="chart__tick">3</div>
+                    <div class="chart__tick">4</div>
+                    <div class="chart__tick">5</div>
+                    <div class="chart__tick">6</div>
+                    <div class="chart__tick">7</div>
+                    <div class="chart__tick">8</div>
+                    <div class="chart__tick">9</div>
+                    <div class="chart__tick">10</div>
+                    <div class="chart__tick">11</div>
+                    <div class="chart__tick">12</div>
+                </div>
+            </dl>
+            <p>Twoim ojczystym językiem miłości jest ten, który wybrano najczęściej. Jeśli dwie różne opcje uzyskały
+                najwięcej punktów, oznacza to, że jesteś osobą dwujęzyczną - posługujesz się dwoma podstawowymi językami
+                wyrażania miłości. Jeśli drugi wynik w kolejności jest bardzo blisko wyniku najwyższego, ale nie mają
+                tej samej wartości, oznacza to, że obydwa te sposoby wyrażania miłości są dla ciebie ważne. Najwyższa
+                liczba punktów dla każdego z języków to 12.</p>
+            <p>Chociaż niektóre z języków miłości oceniono niżej niż inne, nie odrzucaj ich jako pozbawionych znaczenia.
+                Twoi przyjaciele i osoby ci bliskie mogą w taki sposób właśnie okazywać miłość. Ważne więc jest, aby
+                znać je wszystkie.</p>
+            <div class="box__buttons">
+                <button class="button -margin -goto" data-goto=".-questions">twoje odpowiedzi</button>
+                <button class="button -margin -goto" data-goto=".-info">powrót</button>
+            </div>
+        </div>
+    </section>
+    <section class="box__section -questions">
+        <div class="box__content">
+            <div class="box__title">Udzielone odpowiedzi</div>
+            <p class="question__text">Większe znaczenie dla mnie ma, gdy...</p>
+            <ul class="question"></ul>
+            <button class="button -margin -goto" data-goto=".-score">powrót</button>
+        </div>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
 </html>
